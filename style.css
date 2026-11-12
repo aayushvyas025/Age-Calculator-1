@@ -70,7 +70,7 @@ body {
 } 
 
 .result {
-    display:none;
+    /* display:none; */
     margin-top: 2.5rem;
     width:60%;
     text-align: center;

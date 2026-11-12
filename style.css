@@ -1,0 +1,78 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #181717;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+}
+
+.app {
+  margin-top: 2.5rem;
+  width: 800px;
+  height: 500px;
+  background-color: #3d3d3d;
+  padding: 2rem;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  box-shadow: 0px 5px 10px #ffffff93;
+}
+
+.app-title {
+  font-size: 4rem;
+  font-weight: 400;
+}
+
+.app p {
+  font-size: 1.5rem;
+  margin-top: 2rem;
+}
+
+.app input {
+  margin-top: 1.5rem;
+  width: 40%;
+  height: 50px;
+  padding: 5px;
+  font-size: 1rem;
+  border-radius: 6px;
+  border: none;
+  outline: none;
+}
+
+.app button {
+  padding: 15px;
+  margin-top: 1.5rem;
+  font-size: 1rem;
+  width: 30%;
+  background-color: #0a79c9;
+  color: #fff;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+
+.app button:hover {
+ background-color: #189dfb;
+} 
+
+.result {
+    display:none;
+    margin-top: 2.5rem;
+    width:60%;
+    text-align: center;
+    font-size: 2rem;
+}

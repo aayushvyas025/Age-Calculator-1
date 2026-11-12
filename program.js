@@ -8,6 +8,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
   function calculateAge(birthYear) {
     const currentYear = new Date().getFullYear();
+    if(birthYear > currentYear) {
+        resultDiv.classList.add("result");
+        // clean up the previous content 
+        resultDiv.innerHTML = "";
+        resultDiv.textContent  = "Please Enter valid birthdate"
+    }
     return currentYear - birthYear;
   }
 
@@ -22,6 +28,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   btn.addEventListener("click", () => {
     if (currentAge === null) {
+        resultDiv.classList.add("result");
       resultDiv.textContent = "Please select your birthdate";
       return;
     }
